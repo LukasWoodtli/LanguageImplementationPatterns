@@ -4,6 +4,7 @@ Code for the Book [Language Implementation Patterns](https://pragprog.com/book/t
 
 
 Patterns:
+
 | Pattern                                                | Implemented |
 |--------------------------------------------------------|-------------|
 | P.1. Mapping Grammars to Recursive-Descent Recognizers |             |
