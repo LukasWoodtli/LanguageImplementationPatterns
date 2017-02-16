@@ -1,5 +1,5 @@
 
-public class Test {
+public class LexerTest {
 
 	/**
 	 * @param args
