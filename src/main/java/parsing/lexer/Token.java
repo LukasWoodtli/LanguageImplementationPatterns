@@ -1,3 +1,5 @@
+package parsing.lexer;
+
 public class Token {
     public int type;
     public String text;
