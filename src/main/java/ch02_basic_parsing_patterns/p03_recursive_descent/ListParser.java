@@ -1,6 +1,6 @@
-package parsing.recursive_descent;
+package ch02_basic_parsing_patterns.p03_recursive_descent;
 
-import parsing.lexer.*;
+import ch02_basic_parsing_patterns.p02_lexer.*;
 
 public class ListParser extends Parser {
 	public ListParser(Lexer input) {super(input);}

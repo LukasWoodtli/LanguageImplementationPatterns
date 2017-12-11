@@ -1,6 +1,4 @@
-package parsing.lexer;
-
-import parsing.lexer.ListLexer;
+package ch02_basic_parsing_patterns.p02_lexer;
 
 import static org.junit.Assert.*;
 
@@ -8,6 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Test;
+
+import ch02_basic_parsing_patterns.p02_lexer.Lexer;
+import ch02_basic_parsing_patterns.p02_lexer.ListLexer;
+import ch02_basic_parsing_patterns.p02_lexer.Token;
 
 
 public class LexerTest {

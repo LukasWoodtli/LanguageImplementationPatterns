@@ -1,4 +1,4 @@
-package parsing.lexer;
+package ch02_basic_parsing_patterns.p02_lexer;
 
 public class Token {
     public int type;
