@@ -1,6 +1,7 @@
 package ch02_basic_parsing_patterns.p03_recursive_descent;
 
-import ch02_basic_parsing_patterns.p02_lexer.*;
+import ch02_basic_parsing_patterns.p02_lexer.Lexer;
+import ch02_basic_parsing_patterns.p02_lexer.Token;
 
 public abstract class Parser {
 	Lexer input;	 //from where do we get tokens?
