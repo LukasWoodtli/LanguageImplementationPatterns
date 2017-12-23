@@ -16,3 +16,6 @@ gradle-app.setting
 .classpath
 .project
 .settings/
+
+# Reference examples from book
+code/

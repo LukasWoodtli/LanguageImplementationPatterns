@@ -7,7 +7,7 @@ public abstract class Lexer {
     public static final int EOF_TYPE = 1;
     String input; // input string
     int p = 0;    // index of current char
-    char c;
+    protected char c;
 
     public Lexer(String input) {
         this.input = input;

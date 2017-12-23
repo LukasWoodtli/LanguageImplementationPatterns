@@ -11,8 +11,8 @@ Examples from the book [Language Implementation Patterns](https://pragprog.com/b
 |--------------------------------------------------------|------|
 | P.1. Mapping Grammars to Recursive-Descent Recognizers |   ✓  |
 | P.2. *LL(1)* Recursive-Descent Lexer                   |   ✓  |
-| P.3. *LL(1)* Recursive-Descent Parser                  |      |
-| P.4. *LL(k)* Recursive-Descent Parser                  |      |
+| P.3. *LL(1)* Recursive-Descent Parser                  |   ✓  |
+| P.4. *LL(k)* Recursive-Descent Parser                  |   ✓  |
 | P.5. Backtracking Parser                               |      |
 | P.6. Memoizing Parser                                  |      |
 | P.7. Predicated Parser                                 |      |
