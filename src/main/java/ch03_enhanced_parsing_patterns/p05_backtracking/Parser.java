@@ -6,9 +6,10 @@ import java.util.List;
 
 public abstract class Parser {
 	Lexer input;
-	List<Integer> markers;
-	List<Token> lookahead;
-	int p = 0;
+	List<Integer> markers; // stack of index markers into lookahead buffer
+	List<Token> lookahead; // dynamically-sized lookahead buffer
+	int p = 0; // index of current token in lookahead buffer
+	           // LT(1) returns lookahead[p]
 
 	public Parser(Lexer input) {
 		this.input = input;
@@ -29,8 +30,8 @@ public abstract class Parser {
 
 	/** Make sure we have i tokens from current position p */
 	public void sync(int i) {
-		if (p+i-1 > lookahead.size() - 1) {
-			int n = (p + i -1) - (lookahead.size() - 1);
+		if (p + i - 1 > lookahead.size() - 1) {
+			int n = (p + i - 1) - (lookahead.size() - 1);
 			fill(n);
 		}
 	}
@@ -42,6 +43,7 @@ public abstract class Parser {
 		}
 	}
 
+	/** Lookahead token */
 	public Token LT(int i) {
 		sync(i);
 		return lookahead.get(p + i - 1);
@@ -63,17 +65,22 @@ public abstract class Parser {
 		}
 	}
 	
+	/** Push current token index to stack */
 	public int mark() {
 		markers.add(p);
 		return p;
 	}
 	
+	/** Pop the token index of the stack.
+	 *  Rewind p to that position.
+	 *  Rewinding the input is kind of undoing the `consume` */
 	public void release() {
 		int marker = markers.get(markers.size() - 1);
 		markers.remove(markers.size() - 1);
 		seek(marker);
 	}
-	
+
+	/** Rewind p to index */
 	public void seek(int index) {
 		p = index;
 	}
