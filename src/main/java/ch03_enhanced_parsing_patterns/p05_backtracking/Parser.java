@@ -17,17 +17,20 @@ public abstract class Parser {
 		sync(1); // prime lookahead
 	}
 
+	/** The same as in the fixed-lookahead parser except that we clear the lookahead buffer when 
+	 *  we hit the end. */
 	public void consume() {
 		p++;
 		// have we hit end of buffer when not backtracking?
 		if (p == lookahead.size() && !isSpeculating()) {
+			// if so, it's an opportunity to start filling at index 0 again
 			p = 0;
 			lookahead.clear();
 		}
-		sync(1);
+		sync(1); // get another to replace consumed token
 	}
 
-	/** Make sure we have i tokens from current position p */
+	/** Make sure we have i tokens from current position p (valid tokens from index p to p+i-1). */
 	public void sync(int i) {
 		if (p+i-1 > lookahead.size() - 1) {
 			int n = (p + i -1) - (lookahead.size() - 1);
@@ -62,6 +65,9 @@ public abstract class Parser {
 			throw new MismatchedTokenException(msg);	
 		}
 	}
+	
+	// marker management methods are simple because all they do is manage the markers stack:
+	
 	
 	public int mark() {
 		markers.add(p);
