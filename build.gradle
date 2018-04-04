@@ -8,6 +8,8 @@
 
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
+// ANTLR support
+apply plugin: 'antlr'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -22,5 +24,15 @@ dependencies {
 
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
+    
+    // ANTLR
+    antlr "org.antlr:antlr:3.5.2" // use ANTLR version 3
+    compile 'org.antlr:antlr-runtime:3.5.2'
+    testCompile 'org.antlr:antlr-runtime:3.5.2'
 }
+
+test {
+	workingDir = '.'
+}
+
 
