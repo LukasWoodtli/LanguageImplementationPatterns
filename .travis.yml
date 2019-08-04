@@ -1,2 +1,11 @@
 language: java
 
+services:
+  - docker
+
+before_install:
+- docker pull adoptopenjdk/openjdk11:jdk-11.0.3.7
+
+
+script:
+- docker run --rm -it -v $TRAVIS_BUILD_DIR:/LanguageImplementationPatterns -w /LanguageImplementationPatterns adoptopenjdk/openjdk11:jdk-11.0.3.7 ./gradlew build
