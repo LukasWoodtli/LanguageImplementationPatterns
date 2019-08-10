@@ -16,6 +16,7 @@ gradle-app.setting
 .classpath
 .project
 .settings/
+.idea/
 
 # Reference examples from book
 code_from_book/code/

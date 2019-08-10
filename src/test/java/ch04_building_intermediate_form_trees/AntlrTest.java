@@ -1,11 +1,7 @@
 package ch04_building_intermediate_form_trees;
 
-import static org.junit.Assert.*;
 
-import java.io.FileReader;
-
-
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class AntlrTest {
 
