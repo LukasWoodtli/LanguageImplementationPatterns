@@ -1,10 +1,12 @@
 package ch03_enhanced_parsing_patterns.p06_memoizing_parser;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 
 
 public class MemoizingParserTest {
@@ -23,8 +25,9 @@ public class MemoizingParserTest {
 
 		String expectedOutput = "attempt alternative 1\nparse list rule at token index: 0\nattempt alternative 2\nparsed list before at index 0; skip ahead to token index 5: =\nparse list rule at token index: 6\npredict alternative 2\nparse list rule at token index: 0\nparse list rule at token index: 6\n";
 		System.setOut(stdout);
-		System.out.print(baos.toString());
-		assertEquals(expectedOutput, baos.toString());
+		String actualOutput = baos.toString().replaceAll("\r", "");
+		System.out.print(actualOutput);
+		assertThat(expectedOutput, equalTo(actualOutput));
 	}
 
 }
