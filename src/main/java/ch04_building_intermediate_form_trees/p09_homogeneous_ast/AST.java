@@ -5,7 +5,7 @@ import java.util.List;
 
 public class AST {
     private Token token;
-    private List<AST> children; // normalized list of children
+    protected List<AST> children; // normalized list of children
 
     public AST() {
     }
