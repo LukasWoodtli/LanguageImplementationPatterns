@@ -17,7 +17,7 @@ Examples from the book [Language Implementation Patterns](https://pragprog.com/b
 | P.6. Memoizing Parser                                  |   ✓  |
 | P.7. Predicated Parser                                 |   ✓  |
 | P.8. Parse Tree                                        |   ✓  |
-| P.9. Homogeneous AST                                   |      |
+| P.9. Homogeneous AST                                   |   ✓  |
 | P.10. Normalized Heterogeneous AST                     |      |
 | P.11. Irregular Heterogeneous AST                      |      |
 | P.12. Embedded Heterogeneous Tree Walker               |      |

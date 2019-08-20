@@ -1,11 +1,11 @@
-package p09_homogeneous_ast;
+package ch04_building_intermediate_form_trees.p09_homogeneous_ast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class AST {
-    Token token;
-    List<AST> children; // normalized list of children
+    private Token token;
+    private List<AST> children; // normalized list of children
 
     public AST() {
     }
@@ -26,12 +26,12 @@ public class AST {
 
     public void addChild(AST t) {
         if (children == null) {
-            children = new ArrayList<AST>();
+            children = new ArrayList<>();
         }
         children.add(t);
     }
 
-    public boolean isNil() {
+    private boolean isNil() {
         return token == null;
     }
 
@@ -52,7 +52,7 @@ public class AST {
         }
 
         for (int i = 0; i < children.size(); ++i) {
-            AST t = (AST) children.get(i); // normalized children
+            AST t = children.get(i); // normalized children
             if (i > 0)
                 buf.append(' ');
             buf.append(t.toStringTree());

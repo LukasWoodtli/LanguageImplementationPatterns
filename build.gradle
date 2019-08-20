@@ -17,9 +17,6 @@ test {
 }
 
 dependencies {
-    // The production code uses Guava
-    compile 'com.google.guava:guava:20.0'
-
     // Use JUnit test framework
     testCompile("org.junit.jupiter:junit-jupiter-api:5.5.1")
     testCompile("org.hamcrest:hamcrest-all:1.3")

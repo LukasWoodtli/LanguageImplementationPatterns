@@ -1,4 +1,4 @@
-package p09_homogeneous_ast;
+package ch04_building_intermediate_form_trees.p09_homogeneous_ast;
 
 public class Token {
     public static final int INVALID_TOKEN_TYPE = 0;
