@@ -1,7 +1,7 @@
 package ch04_building_intermediate_form_trees.p11_irregular_heterogeneous_ast;
 
 public abstract class HeteroAST {
-    Token token;
+    protected Token token;
 
     public HeteroAST() {
     }
