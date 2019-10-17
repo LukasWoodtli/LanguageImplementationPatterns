@@ -22,8 +22,8 @@ Examples from the book [Language Implementation Patterns](https://pragprog.com/b
 | P.11. Irregular Heterogeneous AST                      |   ✓  |
 | P.12. Embedded Heterogeneous Tree Walker               |   ✗  |
 | P.13. External Tree Visitor                            |   ✓  |
-| P.14. Tree Grammar                                     |      |
-| P.15. Tree Pattern Matcher                             |      |
+| P.14. Tree Grammar                                     |   ✓  |
+| P.15. Tree Pattern Matcher                             |   ✗  |
 | P.16. Symbol Table for Monolithic Scope                |      |
 | P.17. Symbol Table for Nested Scopes                   |      |
 | P.18. Symbol Table for Data Aggregates                 |      |
