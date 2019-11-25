@@ -37,6 +37,6 @@ Examples from the book [Language Implementation Patterns](https://pragprog.com/b
 | P.26. Bytecode Assembler                               |      |
 | P.27. Stack-Based Bytecode Interpreter                 |      |
 | P.28. Register-Based Bytecode Interpreter              |      |
-| P.29. Syntax-Directed Translator                       |      |
-| P.30. Rule-Based Translator                            |      |
-| P.31. Target-Specific Generator Classes                |      |
+| P.29. Syntax-Directed Translator                       |   ✗  |
+| P.30. Rule-Based Translator                            |   ✗  |
+| P.31. Target-Specific Generator Classes                |   ✗  |
