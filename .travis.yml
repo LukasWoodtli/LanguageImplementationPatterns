@@ -8,4 +8,4 @@ before_install:
 
 
 script:
-- docker run --rm -it -v $TRAVIS_BUILD_DIR:/LanguageImplementationPatterns -w /LanguageImplementationPatterns adoptopenjdk/openjdk11:jdk-11.0.3.7 ./gradlew build
+- docker run --rm -it -v $TRAVIS_BUILD_DIR:/LanguageImplementationPatterns -w /LanguageImplementationPatterns adoptopenjdk/openjdk11:jdk-11.0.3.7 ./gradlew build test
