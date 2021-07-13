@@ -26,7 +26,7 @@ Examples from the book [Language Implementation Patterns](https://pragprog.com/b
 | P.15. Tree Pattern Matcher                             |   ✗  |
 | P.16. Symbol Table for Monolithic Scope                |   ✓  |
 | P.17. Symbol Table for Nested Scopes                   |   ✓  |
-| P.18. Symbol Table for Data Aggregates                 |      |
+| P.18. Symbol Table for Data Aggregates                 |   ✓  |
 | P.19. Symbol Table for Classes                         |      |
 | P.20. Computing Static Expression Types                |      |
 | P.21. Automatic Type Promotion                         |      |
