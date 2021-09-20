@@ -27,16 +27,16 @@ Examples from the book [Language Implementation Patterns](https://pragprog.com/b
 | P.16. Symbol Table for Monolithic Scope                |   ✓  |
 | P.17. Symbol Table for Nested Scopes                   |   ✓  |
 | P.18. Symbol Table for Data Aggregates                 |   ✓  |
-| P.19. Symbol Table for Classes                         |      |
-| P.20. Computing Static Expression Types                |      |
-| P.21. Automatic Type Promotion                         |      |
-| P.22. Enforcing Static Type Safety                     |      |
-| P.23. Enforcing Polymorphic Type Safety                |      |
-| P.24. Syntax-Directed Interpreter                      |      |
-| P.25. Tree-Based Interpreter                           |      |
-| P.26. Bytecode Assembler                               |      |
-| P.27. Stack-Based Bytecode Interpreter                 |      |
-| P.28. Register-Based Bytecode Interpreter              |      |
+| P.19. Symbol Table for Classes                         |   ✗  |
+| P.20. Computing Static Expression Types                |   ✗  |
+| P.21. Automatic Type Promotion                         |   ✗  |
+| P.22. Enforcing Static Type Safety                     |   ✗  |
+| P.23. Enforcing Polymorphic Type Safety                |   ✗  |
+| P.24. Syntax-Directed Interpreter                      |   ✗  |
+| P.25. Tree-Based Interpreter                           |   ✗  |
+| P.26. Bytecode Assembler                               |   ✗  |
+| P.27. Stack-Based Bytecode Interpreter                 |   ✗  |
+| P.28. Register-Based Bytecode Interpreter              |   ✗  |
 | P.29. Syntax-Directed Translator                       |   ✗  |
 | P.30. Rule-Based Translator                            |   ✗  |
 | P.31. Target-Specific Generator Classes                |   ✗  |
